@@ -1,5 +1,5 @@
 import matplotlib.pyplot as plt
-import contourPy
+import contourpy
 import pandas as pd
 import numpy as np
 import pathlib
@@ -282,7 +282,7 @@ class png2video():
         cv2.destroyAllWindows()
         video.release()
 
-masonry_test=Thermo_analysis(TC_reading=pd.read_csv('30V_processed.csv'),
+masonry_test=Thermo_analysis(TC_reading=pd.read_csv('example_dataset1.csv'),
                      time_profile=[0.01,1,5, 10,20],
                  time_contour=[ 0,0.1, 0.5, 1, 2,3, 5, 10, 15, 20,25,30,40,50,60,70,80,90,100,110,120],
                              TC_loc='location.csv',
